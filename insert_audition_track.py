@@ -1,6 +1,6 @@
-def insert_track():
+def insert_audition_track():
     # 该函数计算当前工程选择的items数目
-    if RPR_CountSelectedMediaItems(0)==0:
+    if RPR_CountSelectedMediaItems(0) == 0:
         return
 
     # 还原点
@@ -55,4 +55,4 @@ def insert_track():
     RPR_Main_OnCommand(41588, 0)
     RPR_Undo_EndBlock("insert_track", -1)
 
-insert_track()
+insert_audition_track()
